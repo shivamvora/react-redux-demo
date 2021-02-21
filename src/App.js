@@ -1,20 +1,17 @@
-import React, {useState} from 'react';
+import React,{ useState } from 'react';
 import './App.css';
+import Form from './components/Form';
+import TodoList from './components/TodoList';
 
 function App() {
-  
-  const [counter,setCounter] = useState(0);
-
-    
+  const [inputText,setInputText] = useState();
+  const [todos,setTodos] = useState([]);
   return (
     <div className="App">
-          
-          <h1 onClick={()=>setCounter(counter + 1)}> 
-            
-            Counter : {counter}
-            
-            </h1>
-          
+          <h1>Hello React shivam's todo list</h1>
+
+              <Form todos={todos} setInputText={setInputText}/>
+              <TodoList />
       </div>
   );
 }
