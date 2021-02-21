@@ -11,7 +11,7 @@ function App() {
           <h1>Hello React shivam's todo list</h1>
 
               <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText}/>
-              <TodoList todos={todos}/>
+              <TodoList todos={todos} setTodos={setTodos}/>
       </div>
   );
 }
