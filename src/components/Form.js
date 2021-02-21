@@ -11,13 +11,13 @@ const Form = ({setInputText,todos,setTodos,inputText}) => {
             setTodos([
                 ...todos, {text: inputText, completed:false, id: Math.random()*1000}
             ])
+            setInputText("");
     }
 
 	return (
 		<div>
 			<form>
-				<input onChange={inputTextHandler} type="text" />
-                <span>+</span>
+				<input value={inputText} onChange={inputTextHandler} type="text" />
 				<button onClick={submitTodoHandler} type="submit">Submit</button>
 				<div className="select">
 					<select name="todos" className="filter-todo">
