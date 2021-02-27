@@ -7,7 +7,9 @@ const Form = () => {
     const dispatch = useDispatch();
     const storeUser = ( e ) => {
         e.preventDefault();
-        dispatch( { type: 'ADD_USER', payload:{name,address}} );
+        dispatch( { type: 'ADD_USER', payload: { id: uuidv4(), name, address } } );
+        setName( '' );
+        setAddress( '' );
     }
     return (
         <div>

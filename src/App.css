@@ -37,3 +37,25 @@ form{
   text-transform: uppercase;
   font-size: 16px;
 }
+.row{
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  flex: wrap;
+}
+.name{
+  width: 30%;
+}
+.address{
+  width: 40%;
+  
+}
+.user-btn{
+  width: 30%;
+  
+}
+.btn-danger{
+  background-color: red;
+  
+  
+}
